@@ -10,7 +10,7 @@ class gitlab::params {
   $gitlab_sources      = 'git://github.com/gitlabhq/gitlabhq.git'
   $gitlab_branch       = '5-2-stable'
   $gitlabshell_sources = 'git://github.com/gitlabhq/gitlab-shell.git'
-  $gitlabshell_branch  = 'v1.4.0'
+  $gitlabshell_branch  = 'v1.5.0'
   $gitlab_dbtype       = 'mysql'
   $gitlab_dbname       = 'gitladb'
   $gitlab_dbuser       = 'gitladbu'
@@ -18,7 +18,7 @@ class gitlab::params {
   $gitlab_dbhost       = 'localhost'
   $gitlab_dbport       = '3306'
   $gitlab_domain       = $::fqdn
-  $gitlab_repodir      = '/home/git'
+  $gitlab_repodir      = $git_home
   $ldap_enabled        = false
   $ldap_host           = 'ldap.domain.com'
   $ldap_base           = 'dc=domain,dc=com'

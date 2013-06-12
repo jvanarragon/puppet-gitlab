@@ -19,8 +19,8 @@ production: &base
   gitlab:
     ## Web server settings
     host: <%= @gitlab_domain %>
-    port: 80
-    https: false
+    port: 443
+    https: true
     # Uncomment and customize to run in non-root path
     # Note that ENV['RAILS_RELATIVE_URL_ROOT'] in config/puma.rb may need to be changed
     # relative_url_root: /gitlab
